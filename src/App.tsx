@@ -15,7 +15,6 @@ function App() {
     <TimeProvider>
       <Container
         sx={{
-          bgcolor: "#cfe8fc",
           height: "100vh",
           display: "flex",
           alignItems: "center",

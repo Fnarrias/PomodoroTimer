@@ -44,7 +44,7 @@ const { time } = useContext(TimeContext)
   }, [start, stop]);
 
   return (
-    <Box sx={{ bgcolor: "pink", position: "relative" }}>
+    <Box sx={{ position: "relative" }}>
       <CircularProgress
         size={300}
         variant="determinate"
