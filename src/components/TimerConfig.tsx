@@ -29,11 +29,12 @@ export const TimerConfig = ({setShowConfig}: Props) => {
       <Typography sx={{ textAlign: "center" }}>
         Minutos:{showValue.current}
       </Typography>
-      <Slider value={time} onChange={handleChange}></Slider>
+      <Slider value={time} onChange={handleChange} sx={{m:1}}></Slider>
       <Button
         variant="contained"
         startIcon={<ArrowBackIcon />}
         onClick={() => setShowConfig(true)}
+        sx={{m:1}}
       >
         Volver
       </Button>

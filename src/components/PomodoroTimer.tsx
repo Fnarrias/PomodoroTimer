@@ -68,10 +68,10 @@ const { time } = useContext(TimeContext)
           : secondsLeft.current}
       </Typography>
       <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
-        {stop && <Button onClick={() => handleStart()} startIcon={<PlayArrowIcon/>} variant="contained">
+        {stop && <Button onClick={() => handleStart()} startIcon={<PlayArrowIcon/>} variant="contained" sx={{m:1}}>
           Start
         </Button>}
-        {start && <Button onClick={() => handleStop()} startIcon={<PauseIcon/>} variant="contained">
+        {start && <Button onClick={() => handleStop()} startIcon={<PauseIcon/>} variant="contained" sx={{m:1}}>
           Pause
         </Button>}
       </Box>

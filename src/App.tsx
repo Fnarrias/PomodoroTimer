@@ -29,7 +29,7 @@ function App() {
           <TimerConfig setShowConfig={setShowConfig} />
         )}
         {showConfig && (
-          <Button startIcon={<SettingsIcon />} onClick={handleShowConfig} variant="contained" color="primary">Config</Button>
+          <Button startIcon={<SettingsIcon />} onClick={handleShowConfig} variant="contained" color="primary" sx={{m:1}}>Config</Button>
         )}
       </Container>
     </TimeProvider>
