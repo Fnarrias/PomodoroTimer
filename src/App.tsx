@@ -1,4 +1,4 @@
-import { Container, IconButton } from "@mui/material"
+import { Button, Container, IconButton } from "@mui/material"
 import { PomodoroTimer } from "./components/PomodoroTimer"
 import { TimerConfig } from "./components/TimerConfig"
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -29,9 +29,7 @@ function App() {
           <TimerConfig setShowConfig={setShowConfig} />
         )}
         {showConfig && (
-          <IconButton onClick={handleShowConfig}>
-            <SettingsIcon color="primary" fontSize="large" />
-          </IconButton>
+          <Button startIcon={<SettingsIcon />} onClick={handleShowConfig} variant="contained" color="primary">Config</Button>
         )}
       </Container>
     </TimeProvider>
